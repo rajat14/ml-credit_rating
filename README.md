@@ -88,8 +88,9 @@ Clone this repository:
 ```bash
 git clone https://github.com/yourusername/your-repo-name.git](https://github.com/rajat14/ml-credit_rating.git
 cd ml-credit_rating
+```
 
-# Note
+## Note
 AI was used only for small code cleanups and grammar fixes. All analysis and modeling were done manually and independently by me.
   
   
