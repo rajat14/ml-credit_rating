@@ -54,19 +54,24 @@ These models are useful for capturing the complex reelationships between the exp
   # Key Findings and Highlights
 
   ### Realtionship of few explantory variables with Target Variable
-  ![The explantory variables didn't exhibit monotonic linear relationships and therefore, tree models were used for modelling to capture complex relationships. Net profit margin for example, first decrease with increasing risk and then increases. debt_ebditda as well don't follow any monotonic relationship](box_plot_relation_with_target.png)
+  - The explantory variables didn't exhibit monotonic linear relationships and therefore, tree models were used for modelling to capture complex relationships. Net profit margin for example, first decrease with increasing risk and then increases. debt_ebditda as well don't follow any monotonic relationship
+  - ![](box_plot_relation_with_target.png)
   
   ### Distribution of credit ratings after converting them to numeric values
-  ![The credit ratings were mapped to numeric rating as per the risk level mapping. The distibution is not completely symmetric and since the rows are just 100, it doesn't require any majorintervention.](distribution_target.png)
+  - The credit ratings were mapped to numeric rating as per the risk level mapping. The distibution is not completely symmetric and since the rows are just 100, it doesn't require any majorintervention.
+  ![](distribution_target.png)
   
   ### Model Performance based on Structured only, text only and combined data
-  ![GBM accuracy went from 0.2 to 0.25 after incorporating the text data suggesting that the model has captured the context well enough using text embeddings](model_performance.png)
+  - GBM accuracy went from 0.2 to 0.25 after incorporating the text data suggesting that the model has captured the context well enough using text embeddings
+  ![](model_performance.png)
 
   ### Multi-Class Confusion matrix
-  ![Given that the data size was just 100, test data of 20 samples, the confusion matrix shows the prediction model could not be trained sufficiently well and therefore faces issues in prediction for test data.](confusion_matrix_multi_label.png)
+  - Given that the data size was just 100, test data of 20 samples, the confusion matrix shows the prediction model could not be trained sufficiently well and therefore faces issues in prediction for test data.
+  ![](confusion_matrix_multi_label.png)
 
   ### Shap Values for Interpretability
-  ![The shap values for each class depicts that leverage ratios, profitability ratios and also embedding features of text are contributing to the prediction of the ratings. Given that the data is not large enough, these values may not reflect the real impact of the features if the data would haev been large.](shap_plot.png)
+  - The shap values for each class depicts that leverage ratios, profitability ratios and also embedding features of text are contributing to the prediction of the ratings. Given that the data is not large enough, these values may not reflect the real impact of the features if the data would haev been large.
+  ![](shap_plot.png)
 
   # Final Recommendation
   The financial features along with the text data which reflects the sentiment/context of the data may help to improve the prediction modelling of the credit rating data. Those kind of unstructured data (like earning calls transcripts) may give good signals for it to be used in the modelling. The financial indicators like
