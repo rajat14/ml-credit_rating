@@ -46,10 +46,14 @@ These models are useful for capturing the complex reelationships between the exp
   and major outliers. There was no high correlation b/w the variables and therefore the impact of multi-collinearity was ignored.
 - Structured Data: Feature selection based on domain knowledge and target variable. We selected financial ratios as feature variables as   we chose 'Rating' as the target variable.
 - Text Data: For the text data, it had just five unique values and positive sentiment for all the texts. Since there was no variation in it, we chose to convert them into SentenceTransformer embeddings to undestand the context and then did PCA to reduce the dimension from 364 to 10 for using them in the model.
-- Combined Model: Structured + Text features
+- NLP: By using @https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english model, I have tried calculating the sentiment label and score, it doesn't have significant variation, therefore, sentiment analysis is not used in prediction.
+- Transformers based embeddings: Used small model 'all-MiniLM-L6-v2' to calculated the embeddings of the text.
+- Model: Gradient Boosting (GBM) for classification of credit ratings based on Structured + Text features.
 - Evaluation: Accuracy, Weighted Accuracy, SHAP for each class for interpretability.
 
-  # Results
+  # Key Findings and Highlights
+
+  
   
 
 
