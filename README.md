@@ -52,6 +52,13 @@ These models are useful for capturing the complex reelationships between the exp
 - Evaluation: Accuracy, Weighted Accuracy, SHAP for each class for interpretability.
 
   # Key Findings and Highlights
+  ### Distribution of credit ratings after converting them to numeric values
+  ![The credit ratings were mapped to numeric rating as per the risk level mapping. The distibution is not completely symmetric and since the rows are just 100, it doesn't require any majorintervention.](distribution_target.png)
+  
+  ### Model Performance based on Structured + text data
+  ![GBM accuracy went from 0.2 to 0.25 after incorporating the text data suggesting that the model has captured the context well enough using text embeddings](model_performance.png)
+  
+
 
   
   
